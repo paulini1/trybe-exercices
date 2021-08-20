@@ -4,10 +4,8 @@ O que vou aprender na trybe:
 -Git
 -html
 -Css
-
-trybe-skills-updates
 -Javascript
 -Criar sites
-softskills
-integração
+-SoftSkill
+-React
 
