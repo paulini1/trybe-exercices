@@ -1,0 +1,6 @@
+O que vou aprender na trybe:
+-Unix
+-Bash
+-Git
+-html
+-Css
