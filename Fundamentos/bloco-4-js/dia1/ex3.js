@@ -1,6 +1,6 @@
 const a = 150;
 const b = 151;
-const arroz = 50;
+const arroz = 5000;
 if(a > b && a > arroz){
     console.log (a);
 }
