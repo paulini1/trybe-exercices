@@ -13,6 +13,7 @@ body.appendChild(createMain);
 //Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
 const createSection = document.createElement('section');
 createSection.className = 'center-content';
+
 createMain.appendChild(createSection);
 
 //Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
@@ -28,6 +29,7 @@ createMain.appendChild(createSectionLeft);
 //Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
 const createSectionRight = document.createElement('section');
 createSectionRight.className = 'right-content';
+createSectionRight.style.marginRight = 'auto';
 createMain.appendChild(createSectionRight);
 
 //Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
@@ -45,26 +47,17 @@ for(let index =0; index < arrayPorExtenso.length ; index +=1){
     elementLi.innerText = arrayPorExtenso[index];
     createUl.appendChild(elementLi);
 }
-createSectionLeft.appendChild(createUl);
-
-//Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
-for(let index = 1 ; index <=3; index +=1){
-    const createH3 = document.createElement('h3');
-    createH3.innerHTML = "show" + index;
-    createH3.className ="description"; //Adicione a classe description nas 3 tags h3 criadas;
-    createMain.appendChild(createH3);
+for(let index = 1; index<=3;index+=1){
+  const elementH3 = document.createElement('h3');
+  elementH3.className = 'description';
+  elementH3.innerHTML= index;
+  createMain.appendChild(elementH3);
 }
 
-//Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() 
 createMain.removeChild(createSectionLeft);
 
-//Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
-const sectionRight = document.getElementsByClassName('right-content')[0];
-sectionRight.style.marginRight = 'auto';
-
-//Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
-const section1 = document.getElementsByClassName('center-content')[0];
-section1.parentNode.style.backgroundColor='green';
+const sectiongreen = document.getElementsByClassName('center-content')[0];
+sectiongreen.parentNode.style.backgroundColor='green';
 
 createUl.lastChild.remove();
 createUl.lastChild.remove();
