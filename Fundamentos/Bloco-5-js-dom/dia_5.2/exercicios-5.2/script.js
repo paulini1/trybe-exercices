@@ -51,6 +51,9 @@ createSectionLeft.appendChild(createUl);
 for(let index = 1 ; index <=3; index +=1){
     const createH3 = document.createElement('h3');
     createH3.innerHTML = "show" + index;
-    createH3.className ="description";
+    createH3.className ="description"; //Adicione a classe description nas 3 tags h3 criadas;
     createMain.appendChild(createH3);
 }
+
+//Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() 
+createMain.removeChild(createSectionLeft);
