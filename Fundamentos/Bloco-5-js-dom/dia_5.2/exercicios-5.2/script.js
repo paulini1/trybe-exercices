@@ -18,3 +18,8 @@ createMain.appendChild(createSection);
 const createP = document.createElement('p');
 createP.innerText = "A julia vai convencer o papai dela a comprar um ps4.";
 createSection.appendChild(createP);
+
+//Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+const createSectionLeft = document.createElement('section');
+createSectionLeft.className = 'left-content';
+createMain.appendChild(createSectionLeft);
