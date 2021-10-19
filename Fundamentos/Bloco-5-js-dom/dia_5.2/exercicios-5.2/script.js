@@ -13,3 +13,8 @@ body.appendChild(createMain);
 const createSection = document.createElement('section');
 createSection.className = 'center-content';
 createMain.appendChild(createSection);
+
+//Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+const createP = document.createElement('p');
+createP.innerText = "A julia vai convencer o papai dela a comprar um ps4.";
+createSection.appendChild(createP);
