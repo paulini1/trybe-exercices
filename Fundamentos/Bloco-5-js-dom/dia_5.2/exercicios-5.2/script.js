@@ -57,3 +57,7 @@ for(let index = 1 ; index <=3; index +=1){
 
 //Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() 
 createMain.removeChild(createSectionLeft);
+
+//Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
+const sectionRight = document.getElementsByClassName('right-content')[0];
+sectionRight.style.marginRight = "auto";
