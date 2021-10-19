@@ -45,3 +45,10 @@ for(let index =0; index < arrayPorExtenso.length ; index +=1){
     createUl.appendChild(elementLi);
 }
 createSectionLeft.appendChild(createUl);
+
+//Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+for(let index = 1 ; index <=3; index +=1){
+    const createH3 = document.createElement('h3');
+    createH3.innerHTML = "show" + index;
+    createMain.appendChild(createH3);
+}
