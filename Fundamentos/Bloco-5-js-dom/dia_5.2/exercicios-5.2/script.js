@@ -60,4 +60,11 @@ createMain.removeChild(createSectionLeft);
 
 //Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
 const sectionRight = document.getElementsByClassName('right-content')[0];
-sectionRight.style.marginRight = "auto";
+sectionRight.style.marginRight = 'auto';
+
+//Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+const section1 = document.getElementsByClassName('center-content')[0];
+section1.parentNode.style.backgroundColor='green';
+
+createUl.lastChild.remove();
+createUl.lastChild.remove();
